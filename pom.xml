@@ -4,7 +4,7 @@
 
   <groupId>AlgDS1</groupId>
   <artifactId>AlgDS1</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>AlgDS1</name>
