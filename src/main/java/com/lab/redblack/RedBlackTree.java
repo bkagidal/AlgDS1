@@ -105,10 +105,10 @@ public class RedBlackTree implements Tree {
 			return node;
 
 		if (node.getData() < root.getData()) {
-			root.setLeftChild(inserDataIntoTree(node.getLeftChild(),node));
+			root.setLeftChild(inserDataIntoTree(root.getLeftChild(),node));
 			root.getLeftChild().setParent(root);
 		} else if (node.getData() > root.getData()) {
-			root.setRightChild(inserDataIntoTree(node.getRightChild(),node));
+			root.setRightChild(inserDataIntoTree(root.getRightChild(),node));
 			root.getRightChild().setParent(root);
 		}
 		return root;
