@@ -1,5 +1,8 @@
 package com.lab.redblack;
 
-public class Tree {
+public interface Tree {
+	
+	public void traverse();
+	public void insertData(int data);
 
 }
