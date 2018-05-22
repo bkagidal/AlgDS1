@@ -93,8 +93,9 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 
 			Node<T> tempNode = getPredecessor(node.getLeftChild());
 			
-			node.setData(tempNode.getData());
-			node.setLeftChild(deleteValue(tempNode.getData(), node.getLeftChild()));;
+			node.setData(tempNode.getData()); //First replace the data of last node with current node(node that needs be deleted. then delete that last node in next step
+			node.setLeftChild(deleteValue(tempNode.getData(), node.getLeftChild()));; // delete the last node. we already copied the data of last
+                                                                                      //node to node thats needs to	be deleted
 
 		}
 
