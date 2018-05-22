@@ -1,7 +1,5 @@
 package com.lab.redblack;
 
-import javax.swing.text.AbstractDocument.LeafElement;
-
 public class RedBlackTree implements Tree {
 
 	private Node root;

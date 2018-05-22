@@ -9,13 +9,10 @@ public class SplayTree<T extends Comparable<T>> implements Tree<T> {
 	public void insert(T data) {
 
 		Node<T> tempNode = root;
-
-		Node<T> parentNode = null;
+        Node<T> parentNode = null;
 
 		while (tempNode != null) {
-
 			parentNode = tempNode;
-
 			if (data.compareTo(tempNode.getData()) < 0)
 				tempNode = tempNode.getLeftNode();
 			else

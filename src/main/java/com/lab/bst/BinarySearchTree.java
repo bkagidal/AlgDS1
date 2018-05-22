@@ -104,7 +104,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 	private Node<T> getPredecessor(Node<T> node) {
 
 		if (node.getRightChild() != null)
-			return node.getRightChild();
+			return getPredecessor(node.getRightChild());
 		
 		return node;
 	}
